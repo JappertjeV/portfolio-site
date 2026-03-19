@@ -1,0 +1,91 @@
+{
+  "metadata": {
+    "title": "Jasper Veldhuizen — Developer & Automatisering",
+    "description": "19-jarige HBO-ICT student en process improvement engineer. Ik bouw automatiseringen en tools die workflows sneller maken. Gevestigd in Nederland, beschikbaar voor remote freelance werk."
+  },
+  "nav": {
+    "about": "Over mij",
+    "projects": "Projecten",
+    "skills": "Vaardigheden",
+    "contact": "Contact",
+    "github": "GitHub",
+    "blog": "Blog"
+  },
+  "hero": {
+    "badge": "Beschikbaar voor remote freelance werk",
+    "heading": "Hoi, ik ben",
+    "tagline": "Ik bouw automatiseringen en tools die workflows sneller maken.",
+    "cta_work": "Bekijk mijn werk",
+    "cta_contact": "Neem contact op",
+    "scroll": "scroll"
+  },
+  "about": {
+    "label": "01.",
+    "title": "Over mij",
+    "p1": "Ik ben een <b>19-jarige developer</b> uit Nederland met een passie voor automatisering, schone API's en workflows die gewoon <em>werken</em>.",
+    "p2": "Overdag studeer ik ICT aan Windesheim en werk ik als Process Improvement Engineer — ik bouw Enfocus Switch-automatiseringen en integraties die uren handmatig werk besparen. Daarnaast verken ik Docker, Linux en alles wat me helpt sneller te werken.",
+    "p3": "Ik begon met 3D-printen en Autodesk Fusion 360 op school, stapte over op WordPress-ontwikkeling en vond mijn niche uiteindelijk in backend-automatisering en API-werk. Elke stap bouwde voort op de vorige.",
+    "p4": "Op dit moment verdiep ik mijn kennis in JavaScript/TypeScript, Python en API-design — en bouw ik projecten die alle drie combineren.",
+    "h1_title": "HBO-ICT Student",
+    "h1_desc": "Studerend aan Windesheim (2025–2029), processen combineren met praktische technische vaardigheden.",
+    "h2_title": "Process Improvement Engineer",
+    "h2_desc": "Werkzaam bij Veldhuizen Grafisch Effect BV, gericht op Enfocus Switch-automatisering en API-ontwikkeling.",
+    "h3_title": "Automatisering-first",
+    "h3_desc": "Ik geloof dat de beste code, code is die zonder jou draait. Van n8n-workflows tot custom scripts — ik maak systemen slimmer.",
+    "h4_title": "Gevestigd in Nederland",
+    "h4_desc": "Werkend vanuit Barneveld / Voorthuizen. Remote-vriendelijk en open voor freelanceprojecten wereldwijd."
+  },
+  "projects": {
+    "label": "02.",
+    "title": "Projecten",
+    "description": "Mijn openbare projecten staan op GitHub. Ga naar de <link>projectenpagina</link> om alles te zien wat ik bouw.",
+    "cta": "Bekijk alle projecten op GitHub"
+  },
+  "skills": {
+    "label": "03.",
+    "title": "Vaardigheden",
+    "cat_language": "Taal",
+    "cat_runtime": "Runtime",
+    "cat_devops": "DevOps",
+    "cat_automation": "Automatisering",
+    "cat_web": "Web"
+  },
+  "contact": {
+    "label": "04.",
+    "title": "Contact",
+    "heading": "Laten we samenwerken",
+    "p1": "Ik sta open voor freelance projecten, samenwerkingen en interessante gesprekken. Of je nu een automatisering nodig hebt, een API wilt integreren of een workflow wilt stroomlijnen — neem contact op.",
+    "p2": "Ik reageer doorgaans binnen een dag of twee. Alleen remote voor nu.",
+    "email": "E-mail",
+    "linkedin": "LinkedIn",
+    "github": "GitHub"
+  },
+  "footer": {
+    "text": "Gebouwd met Next.js & Tailwind CSS"
+  },
+  "blog": {
+    "title": "Blog",
+    "description": "Gedachten over automatisering, API's en het bouwen van dingen die werken.",
+    "note": "Berichten zijn geschreven in het Engels.",
+    "empty_title": "Nog geen berichten",
+    "empty_desc": "Kom binnenkort terug.",
+    "back": "Terug naar blog",
+    "min_read": "min lezen",
+    "back_home": "Terug naar home"
+  },
+  "projects_page": {
+    "title": "GitHub Projecten",
+    "description": "Al mijn openbare repositories — live opgehaald via de GitHub API.",
+    "repos": "repos",
+    "empty_title": "Geen repositories gevonden",
+    "empty_desc": "Kom later terug.",
+    "source": "Broncode",
+    "live": "Live demo"
+  },
+  "not_found": {
+    "code": "404",
+    "title": "Pagina niet gevonden",
+    "description": "Deze pagina bestaat niet of is verplaatst. Laten we je terugbrengen.",
+    "back": "Terug naar home"
+  }
+}

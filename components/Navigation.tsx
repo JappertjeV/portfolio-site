@@ -1,24 +1,26 @@
 "use client";
 
-import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, Link } from "@/i18n/navigation";
+import { useLocale, useTranslations } from "next-intl";
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 
-const navLinks = [
-  { href: "/#about", label: "About" },
-  { href: "/#projects", label: "Projects" },
-  { href: "/#skills", label: "Skills" },
-  { href: "/#contact", label: "Contact" },
-  { href: "/projects", label: "GitHub" },
-  { href: "/blog", label: "Blog" },
-];
-
 export function Navigation() {
+  const t = useTranslations("nav");
+  const locale = useLocale();
   const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+
+  const navLinks = [
+    { href: "/#about", label: t("about") },
+    { href: "/#projects", label: t("projects") },
+    { href: "/#skills", label: t("skills") },
+    { href: "/#contact", label: t("contact") },
+    { href: "/projects", label: t("github") },
+    { href: "/blog", label: t("blog") },
+  ] as const;
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
@@ -61,6 +63,35 @@ export function Navigation() {
               </Link>
             </li>
           ))}
+
+          {/* Language switcher */}
+          <li className="ml-2 flex items-center gap-1 border-l border-zinc-700 pl-3">
+            <Link
+              href={pathname}
+              locale="en"
+              className={cn(
+                "px-2 py-1 rounded text-xs font-mono font-semibold transition-colors",
+                locale === "en"
+                  ? "text-indigo-400 bg-indigo-500/10"
+                  : "text-zinc-500 hover:text-zinc-300"
+              )}
+            >
+              EN
+            </Link>
+            <span className="text-zinc-700 text-xs">/</span>
+            <Link
+              href={pathname}
+              locale="nl"
+              className={cn(
+                "px-2 py-1 rounded text-xs font-mono font-semibold transition-colors",
+                locale === "nl"
+                  ? "text-indigo-400 bg-indigo-500/10"
+                  : "text-zinc-500 hover:text-zinc-300"
+              )}
+            >
+              NL
+            </Link>
+          </li>
         </ul>
 
         {/* Mobile menu button */}
@@ -88,6 +119,36 @@ export function Navigation() {
                 </Link>
               </li>
             ))}
+            {/* Mobile language switcher */}
+            <li className="flex items-center gap-2 px-3 py-2 mt-1 border-t border-zinc-800 pt-3">
+              <span className="text-zinc-600 text-xs font-mono">LANG</span>
+              <Link
+                href={pathname}
+                locale="en"
+                onClick={() => setMenuOpen(false)}
+                className={cn(
+                  "px-2 py-1 rounded text-xs font-mono font-semibold transition-colors",
+                  locale === "en"
+                    ? "text-indigo-400 bg-indigo-500/10"
+                    : "text-zinc-500 hover:text-zinc-300"
+                )}
+              >
+                EN
+              </Link>
+              <Link
+                href={pathname}
+                locale="nl"
+                onClick={() => setMenuOpen(false)}
+                className={cn(
+                  "px-2 py-1 rounded text-xs font-mono font-semibold transition-colors",
+                  locale === "nl"
+                    ? "text-indigo-400 bg-indigo-500/10"
+                    : "text-zinc-500 hover:text-zinc-300"
+                )}
+              >
+                NL
+              </Link>
+            </li>
           </ul>
         </div>
       )}

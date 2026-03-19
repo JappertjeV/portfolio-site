@@ -1,10 +1,13 @@
 "use client";
 
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 import { motion } from "framer-motion";
 import { ArrowRight, Mail, Github, Linkedin } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 export function Hero() {
+  const t = useTranslations("hero");
+
   return (
     <section className="relative min-h-screen flex items-center justify-center px-6 overflow-hidden">
       {/* Background grid */}
@@ -34,7 +37,7 @@ export function Hero() {
           className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-zinc-800/80 border border-zinc-700/60 text-zinc-400 text-xs font-medium mb-8"
         >
           <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
-          Open to remote freelance work
+          {t("badge")}
         </motion.div>
 
         {/* Heading */}
@@ -44,7 +47,7 @@ export function Hero() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="text-5xl md:text-7xl font-bold tracking-tight text-zinc-50 mb-6"
         >
-          Hi, I&apos;m{" "}
+          {t("heading")}{" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-violet-400">
             Jasper
           </span>
@@ -57,7 +60,7 @@ export function Hero() {
           transition={{ duration: 0.6, delay: 0.3 }}
           className="text-xl md:text-2xl text-zinc-400 mb-10 max-w-2xl mx-auto leading-relaxed"
         >
-          I build automations and tools that make workflows faster.
+          {t("tagline")}
         </motion.p>
 
         {/* CTAs */}
@@ -71,7 +74,7 @@ export function Hero() {
             href="/#projects"
             className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white font-medium transition-all duration-200 hover:shadow-lg hover:shadow-indigo-500/25 active:scale-95"
           >
-            View my work
+            {t("cta_work")}
             <ArrowRight size={16} />
           </Link>
           <Link
@@ -79,7 +82,7 @@ export function Hero() {
             className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-zinc-800 hover:bg-zinc-700 border border-zinc-700 text-zinc-200 font-medium transition-all duration-200 active:scale-95"
           >
             <Mail size={16} />
-            Contact me
+            {t("cta_contact")}
           </Link>
         </motion.div>
 
@@ -125,7 +128,7 @@ export function Hero() {
         transition={{ delay: 1.2, duration: 0.6 }}
         className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-zinc-600 text-xs"
       >
-        <span>scroll</span>
+        <span>{t("scroll")}</span>
         <motion.div
           animate={{ y: [0, 6, 0] }}
           transition={{ repeat: Infinity, duration: 1.4, ease: "easeInOut" }}

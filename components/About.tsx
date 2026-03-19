@@ -1,37 +1,24 @@
+import { getTranslations } from "next-intl/server";
 import { FadeIn } from "./FadeIn";
 import { GraduationCap, Briefcase, MapPin, Zap } from "lucide-react";
 
-const highlights = [
-  {
-    icon: GraduationCap,
-    title: "HBO-ICT Student",
-    description: "Studying at Windesheim (2025–2029), combining process thinking with hands-on technical skills.",
-  },
-  {
-    icon: Briefcase,
-    title: "Process Improvement Engineer",
-    description: "Working at Veldhuizen Grafisch Effect BV, focusing on Enfocus Switch automation and API development.",
-  },
-  {
-    icon: Zap,
-    title: "Automation-First",
-    description: "I believe the best code is code that runs without you. From n8n workflows to custom scripts, I make systems work smarter.",
-  },
-  {
-    icon: MapPin,
-    title: "Based in the Netherlands",
-    description: "Working from Barneveld / Voorthuizen. Remote-friendly and open to freelance projects worldwide.",
-  },
-];
+export async function About() {
+  const t = await getTranslations("about");
 
-export function About() {
+  const highlights = [
+    { icon: GraduationCap, title: t("h1_title"), description: t("h1_desc") },
+    { icon: Briefcase, title: t("h2_title"), description: t("h2_desc") },
+    { icon: Zap, title: t("h3_title"), description: t("h3_desc") },
+    { icon: MapPin, title: t("h4_title"), description: t("h4_desc") },
+  ];
+
   return (
     <section id="about" className="py-24 px-6">
       <div className="max-w-6xl mx-auto">
         <FadeIn>
           <div className="flex items-center gap-3 mb-4">
-            <span className="text-indigo-400 text-sm font-mono font-medium">01.</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-zinc-50">About me</h2>
+            <span className="text-indigo-400 text-sm font-mono font-medium">{t("label")}</span>
+            <h2 className="text-3xl md:text-4xl font-bold text-zinc-50">{t("title")}</h2>
           </div>
           <div className="w-12 h-px bg-indigo-500 mb-12" />
         </FadeIn>
@@ -41,18 +28,18 @@ export function About() {
           <FadeIn delay={0.1}>
             <div className="space-y-4 text-zinc-400 text-lg leading-relaxed">
               <p>
-                I&apos;m a <span className="text-zinc-200 font-medium">19-year-old developer</span> from the Netherlands with a passion for automation, clean APIs, and making workflows that just{" "}
-                <em className="text-indigo-400 not-italic font-medium">work</em>.
+                {t.rich("p1", {
+                  b: (chunks) => (
+                    <span className="text-zinc-200 font-medium">{chunks}</span>
+                  ),
+                  em: (chunks) => (
+                    <em className="text-indigo-400 not-italic font-medium">{chunks}</em>
+                  ),
+                })}
               </p>
-              <p>
-                During the day I study ICT at Windesheim and work as a Process Improvement Engineer — building Enfocus Switch automations and integrations that save hours of manual work. Outside of that, I explore Docker, Linux, and anything that helps me ship faster.
-              </p>
-              <p>
-                I started with 3D printing and Autodesk Fusion 360 in school, moved into WordPress development, and eventually found my groove in backend automation and API work. Each step fed into the next.
-              </p>
-              <p>
-                Right now I&apos;m deepening my knowledge in JavaScript/TypeScript, Python, and API design — and building projects that combine all three.
-              </p>
+              <p>{t("p2")}</p>
+              <p>{t("p3")}</p>
+              <p>{t("p4")}</p>
             </div>
           </FadeIn>
 

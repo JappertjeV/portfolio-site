@@ -1,14 +1,17 @@
+import { getTranslations } from "next-intl/server";
 import { FadeIn } from "./FadeIn";
 import { Mail, Linkedin, Github, ArrowRight } from "lucide-react";
 
-export function Contact() {
+export async function Contact() {
+  const t = await getTranslations("contact");
+
   return (
     <section id="contact" className="py-24 px-6 bg-zinc-900/30">
       <div className="max-w-6xl mx-auto">
         <FadeIn>
           <div className="flex items-center gap-3 mb-4">
-            <span className="text-indigo-400 text-sm font-mono font-medium">04.</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-zinc-50">Contact</h2>
+            <span className="text-indigo-400 text-sm font-mono font-medium">{t("label")}</span>
+            <h2 className="text-3xl md:text-4xl font-bold text-zinc-50">{t("title")}</h2>
           </div>
           <div className="w-12 h-px bg-indigo-500 mb-12" />
         </FadeIn>
@@ -16,15 +19,9 @@ export function Contact() {
         <div className="grid md:grid-cols-2 gap-12 items-start">
           {/* Left */}
           <FadeIn delay={0.1}>
-            <h3 className="text-2xl font-semibold text-zinc-100 mb-4">
-              Let&apos;s work together
-            </h3>
-            <p className="text-zinc-400 leading-relaxed mb-6">
-              I&apos;m open to freelance projects, collaborations, and interesting conversations. Whether you need an automation built, an API integrated, or a workflow untangled — reach out.
-            </p>
-            <p className="text-zinc-400 leading-relaxed">
-              I typically respond within a day or two. Remote-only for now.
-            </p>
+            <h3 className="text-2xl font-semibold text-zinc-100 mb-4">{t("heading")}</h3>
+            <p className="text-zinc-400 leading-relaxed mb-6">{t("p1")}</p>
+            <p className="text-zinc-400 leading-relaxed">{t("p2")}</p>
           </FadeIn>
 
           {/* Right — contact options */}
@@ -39,7 +36,7 @@ export function Contact() {
                     <Mail size={20} className="text-indigo-400" />
                   </div>
                   <div>
-                    <p className="text-zinc-200 font-medium text-sm">Email</p>
+                    <p className="text-zinc-200 font-medium text-sm">{t("email")}</p>
                     <p className="text-zinc-500 text-xs mt-0.5">jasperveldhuizen@icloud.com</p>
                   </div>
                 </div>
@@ -59,7 +56,7 @@ export function Contact() {
                     <Linkedin size={20} className="text-blue-400" />
                   </div>
                   <div>
-                    <p className="text-zinc-200 font-medium text-sm">LinkedIn</p>
+                    <p className="text-zinc-200 font-medium text-sm">{t("linkedin")}</p>
                     <p className="text-zinc-500 text-xs mt-0.5">linkedin.com/in/jasper-veldhuizen</p>
                   </div>
                 </div>
@@ -79,7 +76,7 @@ export function Contact() {
                     <Github size={20} className="text-zinc-300" />
                   </div>
                   <div>
-                    <p className="text-zinc-200 font-medium text-sm">GitHub</p>
+                    <p className="text-zinc-200 font-medium text-sm">{t("github")}</p>
                     <p className="text-zinc-500 text-xs mt-0.5">github.com/JappertjeV</p>
                   </div>
                 </div>
