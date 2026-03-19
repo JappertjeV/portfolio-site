@@ -40,6 +40,9 @@ export async function About() {
               <p>{t("p2")}</p>
               <p>{t("p3")}</p>
               <p>{t("p4")}</p>
+              <p className="border-l-2 border-indigo-500/40 pl-4 text-zinc-500 italic">
+                {t("p5")}
+              </p>
             </div>
           </FadeIn>
 
