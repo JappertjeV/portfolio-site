@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "title": "Jasper Veldhuizen — Developer & Automation Engineer",
+    "title": "Jasper Veldhuizen - Developer & Automation Engineer",
     "description": "19-year-old HBO-ICT student and process improvement engineer. I build automations and tools that make workflows faster. Based in the Netherlands, open to remote freelance work."
   },
   "nav": {
@@ -23,7 +23,7 @@
     "label": "01.",
     "title": "About me",
     "p1": "I'm a <b>19-year-old developer</b> from the Netherlands with a passion for automation, clean APIs, and making workflows that just <em>work</em>.",
-    "p2": "During the day I study ICT at Windesheim and work as a Process Improvement Engineer — building Enfocus Switch automations and integrations that save hours of manual work. Outside of that, I explore Docker, Linux, and anything that helps me ship faster.",
+    "p2": "During the day I study ICT at Windesheim and work as a Process Improvement Engineer, building Enfocus Switch automations and integrations that save hours of manual work. Outside of that, I explore Docker, Linux, and anything that helps me ship faster.",
     "p3": "I started with 3D printing and Autodesk Fusion 360 in school, moved into WordPress development, and eventually found my groove in backend automation and API work. Each step fed into the next.",
     "p4": "Right now I'm deepening my knowledge in JavaScript/TypeScript, Python, and API design. Building projects that combine all three.",
     "p5": "Most of my code is written with AI assistance. I use Claude as a coding partner: I bring the problem, the direction, and the final call. It writes the code. In an industry built around automation, using AI to move faster feels less like cheating and more like practicing what I preach.",
@@ -55,7 +55,7 @@
     "label": "04.",
     "title": "Contact",
     "heading": "Let's work together",
-    "p1": "I'm open to freelance projects, collaborations, and interesting conversations. Whether you need an automation built, an API integrated, or a workflow untangled — reach out.",
+    "p1": "I'm open to freelance projects, collaborations, and interesting conversations. Whether you need an automation built, an API integrated, or a workflow untangled: reach out.",
     "p2": "I typically respond within a day or two. Remote-only for now.",
     "email": "Email",
     "linkedin": "LinkedIn",
@@ -76,7 +76,7 @@
   },
   "projects_page": {
     "title": "GitHub Projects",
-    "description": "All my public repositories — pulled live from the GitHub API.",
+    "description": "All my public repositories, pulled live from the GitHub API.",
     "repos": "repos",
     "empty_title": "No repos found",
     "empty_desc": "Check back later.",

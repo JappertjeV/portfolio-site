@@ -104,7 +104,7 @@ export default async function ProjectsPage({
                 </div>
 
                 <p className="text-zinc-500 text-xs leading-relaxed flex-1 mb-4 line-clamp-2">
-                  {repo.description ?? "—"}
+                  {repo.description ?? "No description."}
                 </p>
 
                 {repo.topics.length > 0 && (

@@ -24,7 +24,7 @@ export async function Contact() {
             <p className="text-zinc-400 leading-relaxed">{t("p2")}</p>
           </FadeIn>
 
-          {/* Right — contact options */}
+          {/* Right: contact options */}
           <div className="flex flex-col gap-4">
             <FadeIn delay={0.15}>
               <a

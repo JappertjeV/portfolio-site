@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "title": "Jasper Veldhuizen — Developer & Automatisering",
+    "title": "Jasper Veldhuizen - Developer & Automatisering",
     "description": "19-jarige HBO-ICT student en process improvement engineer. Ik bouw automatiseringen en tools die workflows sneller maken. Gevestigd in Nederland, beschikbaar voor remote freelance werk."
   },
   "nav": {
@@ -23,7 +23,7 @@
     "label": "01.",
     "title": "Over mij",
     "p1": "Ik ben een <b>19-jarige developer</b> uit Nederland met een passie voor automatisering, schone API's en workflows die gewoon <em>werken</em>.",
-    "p2": "Overdag studeer ik ICT aan Windesheim en werk ik als Process Improvement Engineer — ik bouw Enfocus Switch-automatiseringen en integraties die uren handmatig werk besparen. Daarnaast verken ik Docker, Linux en alles wat me helpt sneller te werken.",
+    "p2": "Overdag studeer ik ICT aan Windesheim en werk ik als Process Improvement Engineer. Ik bouw Enfocus Switch-automatiseringen en integraties die uren handmatig werk besparen. Daarnaast verken ik Docker, Linux en alles wat me helpt sneller te werken.",
     "p3": "Ik begon met 3D-printen en Autodesk Fusion 360 op school, stapte over op WordPress-ontwikkeling en vond mijn niche uiteindelijk in backend-automatisering en API-werk. Elke stap bouwde voort op de vorige.",
     "p4": "Op dit moment verdiep ik mijn kennis in JavaScript/TypeScript, Python en API-design. En bouw ik projecten die alle drie combineren.",
     "p5": "Het grootste deel van mijn code is AI-ondersteund. Ik gebruik Claude als codeerpartner: ik breng het probleem, de richting en de beslissingen. Claude schrijft de code. In een vakgebied dat draait om automatisering voelt sneller werken met AI minder als vals spelen en meer als precies het punt.",
@@ -32,7 +32,7 @@
     "h2_title": "Process Improvement Engineer",
     "h2_desc": "Werkzaam bij Veldhuizen Grafisch Effect BV, gericht op Enfocus Switch-automatisering en API-ontwikkeling.",
     "h3_title": "Automatisering-first",
-    "h3_desc": "Ik geloof dat de beste code, code is die zonder jou draait. Van n8n-workflows tot custom scripts — ik maak systemen slimmer.",
+    "h3_desc": "Ik geloof dat de beste code, code is die zonder jou draait. Van n8n-workflows tot custom scripts: ik maak systemen slimmer.",
     "h4_title": "Gevestigd in Nederland",
     "h4_desc": "Werkend vanuit Barneveld / Voorthuizen. Remote-vriendelijk en open voor freelanceprojecten wereldwijd."
   },
@@ -55,7 +55,7 @@
     "label": "04.",
     "title": "Contact",
     "heading": "Laten we samenwerken",
-    "p1": "Ik sta open voor freelance projecten, samenwerkingen en interessante gesprekken. Of je nu een automatisering nodig hebt, een API wilt integreren of een workflow wilt stroomlijnen — neem contact op.",
+    "p1": "Ik sta open voor freelance projecten, samenwerkingen en interessante gesprekken. Of je nu een automatisering nodig hebt, een API wilt integreren of een workflow wilt stroomlijnen: neem contact op.",
     "p2": "Ik reageer doorgaans binnen een dag of twee. Alleen remote voor nu.",
     "email": "E-mail",
     "linkedin": "LinkedIn",
@@ -76,7 +76,7 @@
   },
   "projects_page": {
     "title": "GitHub Projecten",
-    "description": "Al mijn openbare repositories — live opgehaald via de GitHub API.",
+    "description": "Al mijn openbare repositories, live opgehaald via de GitHub API.",
     "repos": "repos",
     "empty_title": "Geen repositories gevonden",
     "empty_desc": "Kom later terug.",

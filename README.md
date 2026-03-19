@@ -1,4 +1,4 @@
-# jasper.dev — Portfolio
+# jasper.dev - Portfolio
 
 My personal portfolio site. Built with Next.js 15, Tailwind CSS v4, and Framer Motion.
 
@@ -11,7 +11,7 @@ Next.js 15 · TypeScript · Tailwind CSS v4 · Framer Motion · next-intl
 ## Features
 
 - EN / NL bilingual (Dutch & English)
-- GitHub Projects page — live repo grid via GitHub API
+- GitHub Projects page - live repo grid via GitHub API
 - Markdown blog
 - Dark theme, fully responsive
 - Security headers, JSON-LD, sitemap
@@ -27,7 +27,7 @@ npm run dev
 
 | Variable | Description |
 |---|---|
-| `GITHUB_TOKEN` | GitHub PAT — prevents API rate limiting (optional) |
+| `GITHUB_TOKEN` | GitHub PAT - prevents API rate limiting (optional) |
 
 ## License
 
